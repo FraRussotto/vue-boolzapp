@@ -22,7 +22,7 @@
 <body>
   <div id="app">
     <main>
-      <div class="container">
+      <div class="container_fr">
         <div class="app_window d-flex">
 
 
@@ -66,9 +66,9 @@
                     <img :src="contact.avatar" alt="">
                     <div class="avatar_access d-flex flex-column">
                       <span>{{contact.name}}</span>
-                      <span>Ultimo accesso oggi alle 12:00</span>
+                      <span>Ultimo messaggio inviato</span>
                     </div>
-                        <div class="last_access"></div>
+                    <div class="last_access">12:00</div>
                   </div>
                 </li>
               </ul>
@@ -78,11 +78,11 @@
 
 
           <section class="chat">
-            <div class="bar_chat  d-flex justify-content-between align-items-center">
+            <div class="bar_chat d-flex justify-content-between align-items-center">
               <div class="avatar_chat d-flex">
-                <img src="./img/avatar_io.jpg" alt="">
+                <img :src="contacts[counter].avatar" alt="">
                 <div class="avatar_access d-flex flex-column">
-                  <span>Francesco</span>
+                  <span>{{contacts[counter].name}}</span>
                   <span>Ultimo accesso oggi alle 12:00</span>
                 </div>
               </div>
@@ -96,6 +96,12 @@
 
             <div class="chat_content">
 
+            </div>
+
+            <div class="new_messagge d-flex justify-content-evenly align-items-center">
+              <i class="fa-regular fa-face-smile"></i>
+              <input type="text" placeholder="Scrivi un messaggio">
+              <i class="fa-solid fa-microphone"></i>
             </div>
 
           </section>
