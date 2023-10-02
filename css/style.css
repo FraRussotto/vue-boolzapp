@@ -90,6 +90,7 @@ main{
 
 .search_bar{
   width: 100%;
+  height: 50px;
   background-color: #fafafa;
   display: grid;
   place-items: center;
@@ -113,8 +114,36 @@ main{
 
 .list_chats{
   width: 100%;
-  height: calc(100% - 40px - 70px - 60px);
-  overflow-y: scroll;
+  height: calc(100% - 180px);
+  overflow: scroll;
+}
+
+.list_chats .info_chat{
+  width: 100%;
+  height: 100%;
+}
+
+.list_chats ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.list_chats ul li{
+  border-bottom: 2px solid #fafafa;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.list_chats ul li.active{
+  background-color: #fafafa;
+}
+
+.list_chats .info_chat img{
+  width: 15%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-right: 20px;
 }
 
 /* ----- CHAT CONTENT ----- */
