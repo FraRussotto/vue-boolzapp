@@ -28,16 +28,34 @@
 
           <section class="aside">
 
-            <div class="bar_aside">
-              
+            <div class="bar_aside d-flex justify-content-between align-items-center">
+              <div class="avatar_me">
+                <img src="./img/avatar_io.jpg" alt="">
+                <span>Alessia</span>
+              </div>
+              <div class="option">
+                <i class="fa-solid fa-circle-notch"></i>
+                <i class="fa-solid fa-message"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+
             </div>
 
-            <div class="banner_notifications d-flex">
-              
+            <div class="banner_notifications d-flex align-items-center">
+              <button><i class="fa-solid fa-bell-slash"></i></button>
+              <div class="banner_text">
+                <span>Ricevi notifiche di nuovi messaggi</span>
+                <a href="#"><span>Attiva notifiche desktop</span></a>
+              </div>
             </div>
 
             <div class="search_bar">
-              <input type="text" placeholder="Cerca o inizia una nuova chat">
+              <div class="input-group">
+                <button type="button" class="">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input type="search" class="form-control" placeholder="Cerca o inizia una nuova chat" aria-label="Search" aria-describedby="search-addon" />
+              </div>
             </div>
 
             <div class="list_chats">
@@ -47,14 +65,26 @@
 
 
           <section class="chat">
-            <div class="bar_chat">
-              
+            <div class="bar_chat  d-flex justify-content-between align-items-center">
+              <div class="avatar_chat d-flex">
+                <img src="./img/avatar_io.jpg" alt="">
+                <div class="avatar_access d-flex flex-column">
+                  <span>Francesco</span>
+                  <span>Ultimo accesso oggi alle 12:00</span>
+                </div>
+              </div>
+              <div class="option">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-paperclip"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+
             </div>
 
             <div class="chat_content">
 
             </div>
-            
+
           </section>
         </div>
       </div>      
