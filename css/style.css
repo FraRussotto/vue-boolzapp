@@ -1,0 +1,28 @@
+main{
+  height: 100vh;
+  padding: 30px 0;
+  background: linear-gradient(to top, #d8dbd5 80%, #009688 20%);
+}
+
+.container{
+  width: 80%;
+  height: 100%;
+}
+
+.app_window{
+  width: 100%;
+  min-width: 500px;
+  height: 100%;
+  margin: 0;
+  background-color: azure;
+}
+
+.list_chats{
+  background-color: cadetblue;
+  width: 35%;
+}
+
+.chat{
+  background-color: coral;
+  width: 65%;
+}
