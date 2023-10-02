@@ -17,12 +17,57 @@ main{
   background-color: azure;
 }
 
-.list_chats{
-  background-color: cadetblue;
+.aside{
+  background-color: white;
   width: 35%;
 }
 
+.aside .bar_aside{
+  width: 100%;
+  height: 60px;
+  background-color: #eaeaea;
+}
+
+.chat .bar_chat{
+  width: 100%;
+  height: 60px;
+  background-color: #eaeaea;
+  border-left: 1px solid #dfdfdf;
+}
+
+.banner_notifications{
+  width: 100%;
+  height: 70px;
+  background-color: #8edafc;
+}
+
+.search_bar{
+  width: 100%;
+  height: 40px;
+  background-color: #fafafa;
+  padding: 5px;
+}
+
+.search_bar input{
+  width: 100%;
+}
+
+.list_chats{
+  width: 100%;
+  height: calc(100% - 40px - 70px - 60px);
+  overflow-y: scroll;
+}
+
 .chat{
-  background-color: coral;
   width: 65%;
+  height: 100%;
+}
+
+
+.chat_content{
+  background-image: url(../img/mine.jpg);
+  width: 100%;
+  height: calc(100% - 60px);
+  object-fit: cover;
+  
 }
