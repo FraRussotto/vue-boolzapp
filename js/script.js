@@ -185,12 +185,13 @@ createApp({
     methods:{
 
         newMessage(){
-            this.contacts.push(
+            this.contacts[this.counter].messages.push(
                 {
-                    date: 'dcmif',
-                    message: 'this.message',
+                    date: '12:00',
+                    message: this.message,
                     status: 'sent' 
-                })
+                }),
+                this.message = ''
             }
         }
 }).mount('#app')
