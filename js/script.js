@@ -191,7 +191,20 @@ createApp({
                     message: this.message,
                     status: 'sent' 
                 }),
-                this.message = ''
+            this.message = ''
+            setTimeout(()=>{
+                this.contacts[this.counter].messages.push(
+                    {
+                        date: '12:00',
+                        message: 'Ok',
+                        status: 'received' 
+                    })
+        
+                }, 1000)
             }
+        },
+
+        autoAnswer(){
+            
         }
 }).mount('#app')
