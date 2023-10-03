@@ -233,6 +233,32 @@ main{
   font-size: 1.5rem;
 }
 
-.sent{
-  background-color: ;
+
+
+.chat_content ul{
+  list-style: none;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
 }
+
+.chat_content ul li{
+  padding: 5px 15px;
+  border-radius: 8px;
+  margin: 5px 0;
+}
+
+.chat_content ul li.sent{
+  background-color: #d5f9ba;
+  max-width: 300px;
+  align-self: flex-end;
+}
+
+
+
+.chat_content ul li.received{
+  background-color: #ffffff;
+  align-self: flex-start;
+
+}
+

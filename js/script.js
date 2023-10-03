@@ -175,9 +175,10 @@ createApp({
         },
         
     ],
-    
+
     counter: 0,
-    isActive: false
+    isActive: false,
+    sent: true
     }
 
     },

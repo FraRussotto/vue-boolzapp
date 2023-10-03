@@ -66,9 +66,7 @@
                   :class="{'active' : counter === index}"
                 >
                   <img src="#" alt="">
-
                   <div class="info_chat d-flex">
-
                     <img :src="contact.avatar" alt="">
                     <div class="avatar_access d-flex flex-column">
                       <span>{{contact.name}}</span>
@@ -102,6 +100,16 @@
             </div>
 
             <div class="chat_content">
+              <ul>
+                <li 
+                :class="message.status"
+                v-for="message in contacts[counter].messages"
+                >
+                  <span>
+                    {{message.message}}
+                  </span>
+                </li>
+              </ul>
             </div>
 
             <div class="new_messagge d-flex justify-content-evenly align-items-center">
