@@ -1,3 +1,10 @@
+
+
+// const array = [1,2,5,6,7]
+// const last= array[array.length - 1]
+// console.log(last);
+
+
 const { createApp } = Vue;
 
 createApp({
@@ -165,12 +172,13 @@ createApp({
                     status: 'received'
                 }
             ],
-        }
+        },
+        
     ],
+    
+    counter: 1,
 
-    counter: 0
-    
-    }
-    
-  }
+}
+
+}
 }).mount('#app')

@@ -66,9 +66,9 @@
                     <img :src="contact.avatar" alt="">
                     <div class="avatar_access d-flex flex-column">
                       <span>{{contact.name}}</span>
-                      <span>Ultimo messaggio inviato</span>
+                      <span>{{contact.messages[contact.messages.length - 1].message}}</span>
                     </div>
-                    <div class="last_access">12:00</div>
+                    <div class="last_access">{{contact.messages[contact.messages.length - 1].date}}</div>
                   </div>
                 </li>
               </ul>
