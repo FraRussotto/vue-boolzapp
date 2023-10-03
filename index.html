@@ -60,9 +60,15 @@
 
             <div class="list_chats">
               <ul>
-                <li v-for="(contact, index) in contacts">
+                <li 
+                  v-for="(contact, index) in contacts"
+                  @click="counter = index"
+                  :class="{'active' : counter === index}"
+                >
                   <img src="#" alt="">
+
                   <div class="info_chat d-flex">
+
                     <img :src="contact.avatar" alt="">
                     <div class="avatar_access d-flex flex-column">
                       <span>{{contact.name}}</span>
@@ -70,6 +76,7 @@
                     </div>
                     <div class="last_access">{{contact.messages[contact.messages.length - 1].date}}</div>
                   </div>
+
                 </li>
               </ul>
             </div>

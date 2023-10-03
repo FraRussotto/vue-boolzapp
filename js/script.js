@@ -8,7 +8,7 @@
 const { createApp } = Vue;
 
 createApp({
-  data(){
+    data(){
 
     return {
       contacts: [
@@ -176,9 +176,15 @@ createApp({
         
     ],
     
-    counter: 1,
+    counter: 0,
+    isActive: false
+    }
 
-}
+    },
 
-}
+    methods:{
+        setActive(){
+            console.log(this.counter);
+        }
+    }
 }).mount('#app')

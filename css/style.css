@@ -119,6 +119,7 @@ main{
   width: 100%;
   height: calc(100% - 180px);
   overflow-y: scroll;
+  background-color: #fafafa;
 }
 
 .list_chats .info_chat{
@@ -129,6 +130,8 @@ main{
 .list_chats ul{
   list-style-type: none;
   padding: 0;
+  width: 97%;
+  background-color: white;
 }
 
 .list_chats ul li{
@@ -138,10 +141,22 @@ main{
   padding: 10px;
   border-bottom: 2px solid #fafafa;
 }
-/* 
-.list_chats ul li.active{
-  background-color: #fafafa;
-} */
+
+.list_chats ul li:hover{
+  background-color: #dddddd;
+  border-bottom: 2px solid #dddddd;
+  
+}
+
+.list_chats li.active{
+  background-color: grey;
+  border-bottom: 2px solid grey;
+}
+
+.list_chats li.active:hover{
+  background-color: grey;
+  border-bottom: 2px solid grey;
+}
 
 .list_chats .info_chat img{
   width: 50px;
