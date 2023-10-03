@@ -145,17 +145,16 @@ main{
 .list_chats ul li:hover{
   background-color: #dddddd;
   border-bottom: 2px solid #dddddd;
+  color: white;
+  cursor: pointer;
   
 }
 
-.list_chats li.active{
-  background-color: grey;
-  border-bottom: 2px solid grey;
-}
-
+.list_chats li.active,
 .list_chats li.active:hover{
   background-color: grey;
   border-bottom: 2px solid grey;
+  color: white;
 }
 
 .list_chats .info_chat img{
@@ -237,7 +236,7 @@ main{
 
 .chat_content ul{
   list-style: none;
-  padding: 30px;
+  padding: 30px 40px 0 40px;
   display: flex;
   flex-direction: column;
 }

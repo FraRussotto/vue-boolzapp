@@ -177,15 +177,20 @@ createApp({
     ],
 
     counter: 0,
-    isActive: false,
-    sent: true
+    message: ""
     }
 
     },
 
     methods:{
-        setActive(){
-            console.log(this.counter);
+
+        newMessage(){
+            this.contacts.push(
+                {
+                    date: 'dcmif',
+                    message: 'this.message',
+                    status: 'sent' 
+                })
+            }
         }
-    }
 }).mount('#app')
