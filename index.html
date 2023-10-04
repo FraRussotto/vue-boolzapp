@@ -34,7 +34,7 @@
             <div class="bar_aside d-flex justify-content-between align-items-center">
               <div class="avatar_me">
                 <img src="./img/avatar_io.jpg" alt="">
-                <span>Alessia</span>
+                <span>Francesco</span>
               </div>
               <div class="option">
                 <i class="fa-solid fa-circle-notch"></i>
@@ -97,7 +97,7 @@
                 <img :src="contacts[counter].avatar" alt="">
                 <div class="avatar_access d-flex flex-column">
                   <span>{{contacts[counter].name}}</span>
-                  <span>Ultimo accesso oggi alle 12:00</span>
+                  <span>Ultimo accesso: {{contacts[counter].messages.at(-1).date}}</span>
                 </div>
               </div>
               <div class="option">
@@ -114,9 +114,8 @@
                 :class="message.status"
                 v-for="message in contacts[counter].messages"
                 >
-                  <span>
-                    {{message.message}}
-                  </span>
+                  <span>{{message.message}}</span>
+                  <span>{{message.date}}</span>
                 </li>
               </ul>
             </div>

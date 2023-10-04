@@ -211,6 +211,13 @@ main{
   overflow-y: scroll;
 }
 
+.chat_content span:last-child{
+  display: block;
+  text-align: right;
+  font-size: 0.6rem;
+  color: #b1b1b1;
+}
+
 .new_messagge{
   width: 100%;
   height: 70px;

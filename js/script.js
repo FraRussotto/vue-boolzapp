@@ -10,7 +10,7 @@ createApp({
         {
             name: 'Michele',
             avatar: './img/avatar_1.jpg',
-            visible: false,
+            visible: true,
             messages: [
                 {
                     date: '10/01/2020 15:30:55',
@@ -147,7 +147,7 @@ createApp({
             ],
         },
         {
-            name: 'Davide',
+            name: 'Sofia',
             avatar: './img/avatar_8.jpg',
             visible: true,
             messages: [
