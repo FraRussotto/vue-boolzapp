@@ -201,7 +201,7 @@ createApp({
         },
 
         deleteMessage(index){
-            this.contacts[this.counter].messages.splice(this.index, 1)
+            this.contacts[this.counter].messages.splice(index, 1)
         }
     },
 
