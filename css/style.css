@@ -211,7 +211,7 @@ main{
   overflow-y: scroll;
 }
 
-.chat_content span:last-child{
+.chat_content span:nth-child(2){
   display: block;
   text-align: right;
   font-size: 0.6rem;
@@ -259,11 +259,7 @@ main{
   align-self: flex-end;
 }
 
-
-
 .chat_content ul li.received{
   background-color: #ffffff;
   align-self: flex-start;
-
 }
-

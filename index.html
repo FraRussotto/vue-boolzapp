@@ -79,7 +79,7 @@
                     <img :src="contact.avatar" alt="">
                     <div class="avatar_access d-flex flex-column">
                       <span>{{contact.name}}</span>
-                      <span>{{contact.messages[contact.messages.length - 1].message}}</span>
+                      <span>{{contact.messages.at(-1).message}}</span>
                     </div>
                     <div class="last_access">{{contact.messages[contact.messages.length - 1].date}}</div>
                   </div>
@@ -114,8 +114,18 @@
                 :class="message.status"
                 v-for="message in contacts[counter].messages"
                 >
-                  <span>{{message.message}}</span>
-                  <span>{{message.date}}</span>
+    
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>{{message.message}}</span>
+                    <span>{{message.date}}</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">Action</button></li>
+                    <li><button class="dropdown-item" type="button">Another action</button></li>
+                  </ul>
+                </div>
+                
                 </li>
               </ul>
             </div>
