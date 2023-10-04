@@ -240,26 +240,32 @@ main{
 
 
 
-.chat_content ul{
+.chat_content .list_messages{
   list-style: none;
   padding: 30px 40px 0 40px;
   display: flex;
   flex-direction: column;
+
 }
 
 .chat_content ul li{
-  padding: 5px 15px;
   border-radius: 8px;
   margin: 5px 0;
 }
 
 .chat_content ul li.sent{
   background-color: #d5f9ba;
-  max-width: 300px;
+  padding: 5px;
+  flex-direction: row-reverse;
   align-self: flex-end;
+}
+
+.textDate span{
+  max-width: 100%;
 }
 
 .chat_content ul li.received{
   background-color: #ffffff;
+  padding: 5px 5px 5px 10px;
   align-self: flex-start;
 }

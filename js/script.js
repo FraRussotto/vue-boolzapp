@@ -200,19 +200,17 @@ createApp({
             }, 2000)
         },
 
+        deleteMessage(index){
+            this.contacts[this.counter].messages.splice(this.index, 1)
+        }
+    },
+
+    computed :{
         searchContacts(){
             return this.contacts.filter((contact) => {
                 return contact.name.toLowerCase().includes(this.search.toLowerCase())
             })
         }
-    },
-
-    // computed :{
-    //     searchContacts(){
-    //         return this.contacts.filter((contact) => {
-    //             return contact.name.toLowerCase().includes(this.search.toLowerCase())
-    //         })
-    //     }
-    // }
+    }
     
 }).mount('#app')
