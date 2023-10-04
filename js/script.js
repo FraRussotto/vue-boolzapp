@@ -15,7 +15,7 @@ createApp({
         {
             name: 'Michele',
             avatar: './img/avatar_1.jpg',
-            visible: true,
+            visible: false,
             messages: [
                 {
                     date: '10/01/2020 15:30:55',
@@ -177,7 +177,9 @@ createApp({
     ],
 
     counter: 0,
-    message: ""
+    message: "",
+    search: "",
+    result: 0
     }
 
     },
@@ -200,11 +202,22 @@ createApp({
                         status: 'received' 
                     })
         
-                }, 1000)
-            }
+            }, 2000)
         },
 
-        autoAnswer(){
-            
+        searchContacts(){
+            return this.contacts.filter((contact) => {
+                return contact.name.toLowerCase().includes(this.search.toLowerCase())
+            })
         }
+    },
+
+    // computed :{
+    //     searchContacts(){
+    //         return this.contacts.filter((contact) => {
+    //             return contact.name.toLowerCase().includes(this.search.toLowerCase())
+    //         })
+    //     }
+    // }
+    
 }).mount('#app')

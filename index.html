@@ -54,16 +54,22 @@
                 <button type="button">
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
-                <input type="search" class="form-control" placeholder="Cerca o inizia una nuova chat" aria-label="Search" aria-describedby="search-addon" />
+                <input 
+                v-model="search"
+                type="search" 
+                class="form-control" 
+                placeholder="Cerca o inizia una nuova chat" 
+                aria-label="Search" 
+                aria-describedby="search-addon" />
               </div>
             </div>
 
             <div class="list_chats">
               <ul>
-                <li 
-                  v-for="(contact, index) in contacts"
-                  @click="counter = index"
-                  :class="{'active' : counter === index}"
+                <li
+                v-for="(contact, index) in searchContacts()"
+                @click="counter = index"
+                :class="{'active' : counter === index}"
                 >
                   <img src="#" alt="">
                   <div class="info_chat d-flex">
