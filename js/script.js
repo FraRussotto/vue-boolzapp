@@ -1,17 +1,12 @@
-
-
-// const array = [1,2,5,6,7]
-// const last= array[array.length - 1]
-// console.log(last);
-
-
 const { createApp } = Vue;
+
+const setTime = luxon.DateTime;
 
 createApp({
     data(){
 
     return {
-      contacts: [
+        contacts: [
         {
             name: 'Michele',
             avatar: './img/avatar_1.jpg',
@@ -189,7 +184,7 @@ createApp({
         newMessage(){
             this.contacts[this.counter].messages.push(
                 {
-                    date: '12:00',
+                    date: setTime.now().setLocale('it').toLocaleString(setTime.DATETIME_SHORT_WITH_SECONDS),
                     message: this.message,
                     status: 'sent' 
                 }),
@@ -197,7 +192,7 @@ createApp({
             setTimeout(()=>{
                 this.contacts[this.counter].messages.push(
                     {
-                        date: '12:00',
+                        date: setTime.now().setLocale('it').toLocaleString(setTime.DATETIME_SHORT_WITH_SECONDS),
                         message: 'Ok',
                         status: 'received' 
                     })
