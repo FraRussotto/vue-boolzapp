@@ -200,6 +200,17 @@ createApp({
             }, 2000)
         },
 
+    
+        getLastMessage(contact){
+            if(contact.messages.length > 0) return contact.messages.at(-1).message
+            return ""
+        },
+
+        getLastDate(contact){
+            if(contact.messages.length > 0) return contact.messages.at(-1).date
+            return ""
+        },
+
         deleteMessage(index){
             this.contacts[this.counter].messages.splice(index, 1)
         }

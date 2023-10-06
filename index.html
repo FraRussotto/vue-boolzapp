@@ -80,9 +80,9 @@
                     <img :src="contact.avatar" alt="">
                     <div class="avatar_access d-flex flex-column">
                       <span>{{contact.name}}</span>
-                      <span>{{contact.messages.at(-1).message}}</span>
+                      <span>{{getLastMessage(contact)}}</span>
                     </div>
-                    <div class="last_access">{{contact.messages[contact.messages.length - 1].date}}</div>
+                    <div class="last_access">{{getLastDate(contact)}}</div>
                   </div>
 
                 </li>
@@ -98,7 +98,7 @@
                 <img :src="contacts[counter].avatar" alt="">
                 <div class="avatar_access d-flex flex-column">
                   <span>{{contacts[counter].name}}</span>
-                  <span>Ultimo accesso: {{contacts[counter].messages.at(-1).date}}</span>
+                  <span>Ultimo accesso: {{getLastDate(contacts[counter])}}</span>
                 </div>
               </div>
               <div class="option">

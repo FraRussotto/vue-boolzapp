@@ -251,6 +251,7 @@ main{
 .chat_content ul li{
   border-radius: 8px;
   margin: 5px 0;
+  max-width: 60%;
 }
 
 .chat_content ul li.sent{
@@ -260,8 +261,9 @@ main{
   align-self: flex-end;
 }
 
-.textDate span{
-  max-width: 100%;
+.textDate span:first-child{
+  overflow-wrap: anywhere;
+
 }
 
 .chat_content ul li.received{
